@@ -244,7 +244,7 @@ LIBS="$LIBS -lwolfssl -ldl -lm"
 
 if test "$GCC" = "yes"
 then
-    AM_CFLAGS="$AM_CFLAGS -Wall -Wno-unused"
+    AM_CFLAGS="$AM_CFLAGS -Wall -Wno-unused -Wno-error=deprecated-declarations"
 fi
 
 CFLAGS="$CFLAGS $USER_C_EXTRA_FLAGS"

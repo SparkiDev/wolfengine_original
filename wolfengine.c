@@ -1822,7 +1822,7 @@ static int we_ec_key_keygen(EC_KEY *key)
     int ret = 1;
     int curveId;
     ecc_key ecc;
-    int len;
+    int len = 0;
     unsigned char *buf = NULL;
     unsigned char *d = NULL;
 
